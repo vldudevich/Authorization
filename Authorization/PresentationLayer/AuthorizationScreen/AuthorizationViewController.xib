@@ -28,11 +28,17 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hL-e6-aeV">
-                    <rect key="frame" x="32" y="433" width="350" height="30"/>
+                    <rect key="frame" x="32" y="426" width="350" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="uIW-x4-Rd2"/>
+                    </constraints>
                     <state key="normal" title="Button"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTF-hq-yT2">
-                    <rect key="frame" x="32" y="495" width="350" height="30"/>
+                    <rect key="frame" x="32" y="502" width="350" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="bHR-ml-Tjk"/>
+                    </constraints>
                     <state key="normal" title="Button"/>
                 </button>
             </subviews>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Authorization" customModuleProvider="target">
+            <connections>
+                <outlet property="emailField" destination="xVl-Yv-ZTs" id="Mzu-22-So5"/>
+                <outlet property="loginButton" destination="1JM-Th-pHb" id="PXd-Wt-2YV"/>
+                <outlet property="passwordField" destination="bjc-YP-RK1" id="KKy-Yz-8sN"/>
+                <outlet property="view" destination="iN0-l3-epB" id="UNA-WD-Yp5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="oTg-gK-RCv">
+                    <rect key="frame" x="48" y="164" width="318" height="122"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xVl-Yv-ZTs">
+                            <rect key="frame" x="0.0" y="0.0" width="318" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="jke-XQ-llJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bjc-YP-RK1">
+                            <rect key="frame" x="0.0" y="78" width="318" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="0PW-gS-AVw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JM-Th-pHb">
+                    <rect key="frame" x="48" y="318" width="318" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="x5n-vK-nDI"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oTg-gK-RCv" secondAttribute="trailing" constant="48" id="07s-JW-UP7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1JM-Th-pHb" secondAttribute="trailing" constant="48" id="CaW-4f-k1X"/>
+                <constraint firstItem="1JM-Th-pHb" firstAttribute="top" secondItem="oTg-gK-RCv" secondAttribute="bottom" constant="32" id="V9S-d8-s8r"/>
+                <constraint firstItem="oTg-gK-RCv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="120" id="eZa-Br-U0o"/>
+                <constraint firstItem="oTg-gK-RCv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="48" id="eie-j3-vWz"/>
+                <constraint firstItem="1JM-Th-pHb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="48" id="ktI-xi-aTa"/>
+            </constraints>
+            <point key="canvasLocation" x="-114.49275362318842" y="-14.0625"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

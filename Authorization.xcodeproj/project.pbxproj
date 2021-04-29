@@ -8,7 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		48021367263A8C25000213FA /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48021366263A8C25000213FA /* Decorator.swift */; };
-		48021369263A8D85000213FA /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48021368263A8D85000213FA /* BaseNavigationViewController.swift */; };
+		4802136B263A9B35000213FA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4802136A263A9B34000213FA /* HomeViewController.xib */; };
+		48021374263AAF06000213FA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48021373263AAF06000213FA /* LoginViewModel.swift */; };
+		48021376263AAF21000213FA /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48021375263AAF21000213FA /* RegistrationViewModel.swift */; };
+		48021378263AAF2C000213FA /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48021377263AAF2C000213FA /* HomeScreenViewModel.swift */; };
+		4802137B263AC22A000213FA /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802137A263AC22A000213FA /* DataManager.swift */; };
+		4802137D263AC2BE000213FA /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802137C263AC2BE000213FA /* DataBaseManager.swift */; };
+		48021381263AC347000213FA /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48021380263AC347000213FA /* Logger.swift */; };
+		48021383263AC370000213FA /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48021382263AC370000213FA /* Errors.swift */; };
+		48021385263AC45E000213FA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48021384263AC45E000213FA /* String.swift */; };
+		48021387263AF646000213FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48021386263AF646000213FA /* GoogleService-Info.plist */; };
+		48021389263AFDF7000213FA /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48021388263AFDF7000213FA /* LoginViewController.xib */; };
+		4802138B263B0038000213FA /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4802138A263B0038000213FA /* RegistrationViewController.xib */; };
 		481913EB2639E91B00E61D53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481913EA2639E91B00E61D53 /* AppDelegate.swift */; };
 		481913ED2639E91B00E61D53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481913EC2639E91B00E61D53 /* SceneDelegate.swift */; };
 		481913F42639E91D00E61D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481913F32639E91D00E61D53 /* Assets.xcassets */; };
@@ -28,7 +39,18 @@
 /* Begin PBXFileReference section */
 		174B7EB61A111FFDCC57822B /* Pods_Authorization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Authorization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48021366263A8C25000213FA /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
-		48021368263A8D85000213FA /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		4802136A263A9B34000213FA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		48021373263AAF06000213FA /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		48021375263AAF21000213FA /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		48021377263AAF2C000213FA /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
+		4802137A263AC22A000213FA /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		4802137C263AC2BE000213FA /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		48021380263AC347000213FA /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		48021382263AC370000213FA /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		48021384263AC45E000213FA /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		48021386263AF646000213FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		48021388263AFDF7000213FA /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4802138A263B0038000213FA /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
 		481913E72639E91B00E61D53 /* Authorization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authorization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		481913EA2639E91B00E61D53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		481913EC2639E91B00E61D53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48021379263AC212000213FA /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				4802137A263AC22A000213FA /* DataManager.swift */,
+				4802137C263AC2BE000213FA /* DataBaseManager.swift */,
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
 		481913DE2639E91B00E61D53 = {
 			isa = PBXGroup;
 			children = (
@@ -86,9 +117,11 @@
 				481913FF2639F2B700E61D53 /* Utils */,
 				481913FE2639F2A800E61D53 /* ApplicationLayer */,
 				481914082639F38C00E61D53 /* PresentationLayer */,
+				48021379263AC212000213FA /* BusinessLogicLayer */,
 				481913F32639E91D00E61D53 /* Assets.xcassets */,
 				481913F52639E91D00E61D53 /* LaunchScreen.storyboard */,
 				481913F82639E91D00E61D53 /* Info.plist */,
+				48021386263AF646000213FA /* GoogleService-Info.plist */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -106,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				48021366263A8C25000213FA /* Decorator.swift */,
+				48021380263AC347000213FA /* Logger.swift */,
+				48021382263AC370000213FA /* Errors.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -115,6 +150,7 @@
 			children = (
 				481914042639F30800E61D53 /* UIView.swift */,
 				481914062639F31900E61D53 /* UIWindow.swift */,
+				48021384263AC45E000213FA /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -143,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				4819140A2639F3CF00E61D53 /* BaseViewController.swift */,
-				48021368263A8D85000213FA /* BaseNavigationViewController.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -152,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				4819140F2639F48500E61D53 /* LoginViewController.swift */,
+				48021373263AAF06000213FA /* LoginViewModel.swift */,
+				48021388263AFDF7000213FA /* LoginViewController.xib */,
 			);
 			path = LoginScreen;
 			sourceTree = "<group>";
@@ -160,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				481914132639F4A100E61D53 /* RegistrationViewController.swift */,
+				4802138A263B0038000213FA /* RegistrationViewController.xib */,
+				48021375263AAF21000213FA /* RegistrationViewModel.swift */,
 			);
 			path = RegistrationScreen;
 			sourceTree = "<group>";
@@ -168,6 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				481914152639F4C000E61D53 /* HomeViewController.swift */,
+				4802136A263A9B34000213FA /* HomeViewController.xib */,
+				48021377263AAF2C000213FA /* HomeScreenViewModel.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -210,6 +251,7 @@
 				481913E42639E91B00E61D53 /* Frameworks */,
 				481913E52639E91B00E61D53 /* Resources */,
 				7FD909E11353F7ED8A02544B /* [CP] Embed Pods Frameworks */,
+				4802136E263AA8A4000213FA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -259,7 +301,11 @@
 			files = (
 				4819141B2639FE9A00E61D53 /* AuthorizationViewController.xib in Resources */,
 				481913F72639E91D00E61D53 /* LaunchScreen.storyboard in Resources */,
+				48021389263AFDF7000213FA /* LoginViewController.xib in Resources */,
+				48021387263AF646000213FA /* GoogleService-Info.plist in Resources */,
 				481913F42639E91D00E61D53 /* Assets.xcassets in Resources */,
+				4802138B263B0038000213FA /* RegistrationViewController.xib in Resources */,
+				4802136B263A9B35000213FA /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +334,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4802136E263AA8A4000213FA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		7FD909E11353F7ED8A02544B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,15 +377,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48021381263AC347000213FA /* Logger.swift in Sources */,
 				481914112639F48500E61D53 /* LoginViewController.swift in Sources */,
+				48021385263AC45E000213FA /* String.swift in Sources */,
+				4802137B263AC22A000213FA /* DataManager.swift in Sources */,
 				481914052639F30800E61D53 /* UIView.swift in Sources */,
 				481914142639F4A100E61D53 /* RegistrationViewController.swift in Sources */,
-				48021369263A8D85000213FA /* BaseNavigationViewController.swift in Sources */,
 				48021367263A8C25000213FA /* Decorator.swift in Sources */,
+				4802137D263AC2BE000213FA /* DataBaseManager.swift in Sources */,
+				48021374263AAF06000213FA /* LoginViewModel.swift in Sources */,
 				481914032639F2E800E61D53 /* TransitionController.swift in Sources */,
 				481914072639F31900E61D53 /* UIWindow.swift in Sources */,
+				48021378263AAF2C000213FA /* HomeScreenViewModel.swift in Sources */,
 				481914162639F4C000E61D53 /* HomeViewController.swift in Sources */,
+				48021376263AAF21000213FA /* RegistrationViewModel.swift in Sources */,
 				481913EB2639E91B00E61D53 /* AppDelegate.swift in Sources */,
+				48021383263AC370000213FA /* Errors.swift in Sources */,
 				481913ED2639E91B00E61D53 /* SceneDelegate.swift in Sources */,
 				4819141A2639FE9A00E61D53 /* AuthorizationViewController.swift in Sources */,
 				4819140B2639F3CF00E61D53 /* BaseViewController.swift in Sources */,

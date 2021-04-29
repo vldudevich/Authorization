@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AuthorizationViewController: BaseViewController {
     
@@ -29,10 +30,15 @@ class AuthorizationViewController: BaseViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 }
 
@@ -41,7 +47,7 @@ private extension AuthorizationViewController {
     
     func setupUI() {
         view.backgroundColor = .white
-        
+       
         headerLabel.text = "Welcome to Authorization"
         headerLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         
@@ -64,11 +70,11 @@ private extension AuthorizationViewController {
     
     @objc
     func didTapCreateAccount() {
-        pushModule(RegistrationViewController())
+        pushModule(RegistrationViewController(registrationViewModel: RegistrationViewModel()))
     }
     
     @objc
     func didTapSignInButton() {
-        pushModule(LoginViewController())
+        pushModule(LoginViewController(loginViewModel: LoginViewModel()))
     }
 }

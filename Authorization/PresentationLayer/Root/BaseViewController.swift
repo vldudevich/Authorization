@@ -8,7 +8,7 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-
+    private var loadFace: UIView?
 }
 
 extension BaseViewController: TransitionController {
@@ -65,5 +65,68 @@ extension BaseViewController: TransitionController {
     @objc
     func dismissModule(animated: Bool, popToRoot: Bool) {
         dismissModule(animated: animated, popToRoot: popToRoot, completion: { })
+    }
+    
+    func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title,
+                                                 message: message,
+                                                 preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alertController.addAction(cancelAction)
+        presentModule(alertController)
+    }
+    
+    func showLoadingFace() {
+        addLoadingFace()
+    }
+    
+    func hideLoadingFace() {
+        removeLoadingFace()
+    }
+}
+
+// MARK: - Private extension
+extension BaseViewController {
+    
+    func addLoadingFace() {
+        
+        guard loadFace == nil else { return }
+        
+        let blurEffect = UIBlurEffect(style: .regular)
+        let backgroundView = UIVisualEffectView(effect: blurEffect)
+        // backgroundView.backgroundColor = view.backgroundColor
+        // backgroundView.alpha = 0.8
+        
+        view.addSubview(backgroundView)
+        backgroundView.fillToSuperview()
+        
+        let activityIndicator: UIActivityIndicatorView
+        if #available(iOS 13.0, *) {
+            activityIndicator = UIActivityIndicatorView(style: .large)
+        } else {
+            activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+        }
+        
+        backgroundView.contentView.addSubview(activityIndicator)
+        activityIndicator.anchorCenterSuperview()
+        activityIndicator.startAnimating()
+        
+        loadFace = backgroundView
+        // navigationController?.navigationBar.isUserInteractionEnabled = false
+        // navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+        if #available(iOS 13.0, *) {
+            isModalInPresentation = true
+        }
+    }
+    
+    func removeLoadingFace() {
+        // loadFace?.alpha = 0.0
+        loadFace?.removeFromSuperview()
+        loadFace = nil
+        // navigationController?.navigationBar.isUserInteractionEnabled = true
+        // navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        if #available(iOS 13.0, *) {
+            isModalInPresentation = false
+        }
     }
 }
