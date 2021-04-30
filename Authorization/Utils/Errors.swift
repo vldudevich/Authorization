@@ -16,6 +16,7 @@ enum Errors: Error {
     case noLogout
     case failedInsertToBD
     case failedGetFromBD
+    case currentUserExist
     
     var errorText: String {
         switch self {
@@ -33,6 +34,8 @@ enum Errors: Error {
             return "Failed insert User to BD"
         case .failedGetFromBD:
             return "Failed Get From BD"
+        case .currentUserExist:
+            return "Curent User Exist"
         }
     }
 }

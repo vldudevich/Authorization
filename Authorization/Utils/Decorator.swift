@@ -31,7 +31,7 @@ extension Decorator.SignScreen {
             textField.layer.cornerRadius = 12
             textField.layer.borderWidth = 1
             textField.layer.borderColor = UIColor.lightGray.cgColor
-            textField.textColor = .gray
+            textField.textColor = .black
             textField.attributedPlaceholder = NSAttributedString(string: placeholderName, attributes: [NSMutableAttributedString.Key.foregroundColor: UIColor.gray])
             textField.isSecureTextEntry = isSecure
             textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
@@ -67,7 +67,7 @@ extension Decorator.RegistrationScreen {
             textField.layer.cornerRadius = 12
             textField.layer.borderWidth = 1
             textField.layer.borderColor = UIColor.lightGray.cgColor
-            textField.textColor = .gray
+            textField.textColor = .black
             textField.attributedPlaceholder = NSAttributedString(string: placeholderName, attributes: [NSMutableAttributedString.Key.foregroundColor: UIColor.gray])
             textField.isSecureTextEntry = isSecure
             textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))

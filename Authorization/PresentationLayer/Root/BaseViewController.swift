@@ -71,7 +71,7 @@ extension BaseViewController: TransitionController {
         let alertController = UIAlertController(title: title,
                                                  message: message,
                                                  preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alertController.addAction(cancelAction)
         presentModule(alertController)
     }

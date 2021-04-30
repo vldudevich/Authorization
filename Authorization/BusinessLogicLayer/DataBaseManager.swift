@@ -16,12 +16,12 @@ class DatabaseManager {
         return emailAddress.firebaseString()
     }
     
-    func userExists(with email: String, completion: @escaping ((Bool) -> Void)) {
+    func userExists(with email: String, completion: @escaping ((Result<Void, Error>) -> Void)) {
         
         database.child(email.firebaseString()).observeSingleEvent(of: .value, with: { (snapshot) in
-            guard snapshot.value as? String != nil else { completion(false); return }
+            guard snapshot.value as? String != nil else { completion(.failure(Errors.currentUserExist)); return }
             
-            completion(true)
+            completion(.success(Void()))
         })
     }
     

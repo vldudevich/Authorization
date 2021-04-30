@@ -66,6 +66,11 @@ private extension AuthorizationViewController {
         signInButton.layer.cornerRadius = 12
         signInButton.titleLabel?.font = .systemFont(ofSize: 20, weight: .bold)
         signInButton.addTarget(self, action: #selector(didTapSignInButton), for: .touchUpInside)
+        
+        Database.database().reference().child("foo").setValue([
+            "first_name": "1",
+            "last_name": "r.lastName"
+        ])
     }
     
     @objc

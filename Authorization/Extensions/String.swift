@@ -11,7 +11,7 @@ extension String {
     
     func firebaseString() -> String {
         var safeEmail = self.replacingOccurrences(of: ".", with: "-")
-        safeEmail = self.replacingOccurrences(of: "@", with: "-")
+        safeEmail = safeEmail.replacingOccurrences(of: "@", with: "-")
         return safeEmail
     }
 }

@@ -17,9 +17,9 @@
 		48021381263AC347000213FA /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48021380263AC347000213FA /* Logger.swift */; };
 		48021383263AC370000213FA /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48021382263AC370000213FA /* Errors.swift */; };
 		48021385263AC45E000213FA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48021384263AC45E000213FA /* String.swift */; };
-		48021387263AF646000213FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48021386263AF646000213FA /* GoogleService-Info.plist */; };
 		48021389263AFDF7000213FA /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48021388263AFDF7000213FA /* LoginViewController.xib */; };
 		4802138B263B0038000213FA /* RegistrationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4802138A263B0038000213FA /* RegistrationViewController.xib */; };
+		4802138D263C0ECB000213FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4802138C263C0ECB000213FA /* GoogleService-Info.plist */; };
 		481913EB2639E91B00E61D53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481913EA2639E91B00E61D53 /* AppDelegate.swift */; };
 		481913ED2639E91B00E61D53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481913EC2639E91B00E61D53 /* SceneDelegate.swift */; };
 		481913F42639E91D00E61D53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 481913F32639E91D00E61D53 /* Assets.xcassets */; };
@@ -48,9 +48,9 @@
 		48021380263AC347000213FA /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		48021382263AC370000213FA /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		48021384263AC45E000213FA /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		48021386263AF646000213FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		48021388263AFDF7000213FA /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		4802138A263B0038000213FA /* RegistrationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationViewController.xib; sourceTree = "<group>"; };
+		4802138C263C0ECB000213FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		481913E72639E91B00E61D53 /* Authorization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Authorization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		481913EA2639E91B00E61D53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		481913EC2639E91B00E61D53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				481913F32639E91D00E61D53 /* Assets.xcassets */,
 				481913F52639E91D00E61D53 /* LaunchScreen.storyboard */,
 				481913F82639E91D00E61D53 /* Info.plist */,
-				48021386263AF646000213FA /* GoogleService-Info.plist */,
+				4802138C263C0ECB000213FA /* GoogleService-Info.plist */,
 			);
 			path = Authorization;
 			sourceTree = "<group>";
@@ -302,10 +302,10 @@
 				4819141B2639FE9A00E61D53 /* AuthorizationViewController.xib in Resources */,
 				481913F72639E91D00E61D53 /* LaunchScreen.storyboard in Resources */,
 				48021389263AFDF7000213FA /* LoginViewController.xib in Resources */,
-				48021387263AF646000213FA /* GoogleService-Info.plist in Resources */,
 				481913F42639E91D00E61D53 /* Assets.xcassets in Resources */,
 				4802138B263B0038000213FA /* RegistrationViewController.xib in Resources */,
 				4802136B263A9B35000213FA /* HomeViewController.xib in Resources */,
+				4802138D263C0ECB000213FA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

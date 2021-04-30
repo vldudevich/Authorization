@@ -19,7 +19,10 @@ class RegistrationViewModel {
     var onFailedRegistration: ((Error) -> Void)?
     
     func signUp() {
-        dataManager.signUp(email: email, password: password) { [weak self] result in
+        dataManager.signUp(email: email,
+                           password: password,
+                           firstName: firstName,
+                           lastName: lastName) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let authResult):
