@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 
 class DataManager {
+    // MARK: - Properties
     private var dataBaseManager = DatabaseManager()
 }
 

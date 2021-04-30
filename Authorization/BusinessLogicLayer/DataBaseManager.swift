@@ -10,6 +10,7 @@ import FirebaseDatabase
 
 class DatabaseManager {
     
+    // MARK: - Constants
     private let database = Database.database().reference()
     
     func safeEmail(emailAddress: String) -> String {

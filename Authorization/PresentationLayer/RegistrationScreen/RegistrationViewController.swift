@@ -21,14 +21,13 @@ class RegistrationViewController: BaseViewController {
     @IBOutlet private weak var registerButton: UIButton!
 
     // MARK: - Constants
-    
     private let registrationViewModel: RegistrationViewModel
     
     // MARK: - Properties
     private var emailFieldObserver: Cancellable?
     private var passwordFieldObserver: Cancellable?
-    // MARK: - Lifecycle
     
+    // MARK: - Lifecycle
     init(registrationViewModel: RegistrationViewModel) {
         self.registrationViewModel = registrationViewModel
         super.init(nibName: String(describing: Self.self), bundle: nil)

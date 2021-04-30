@@ -6,15 +6,15 @@
 //
 
 import Foundation
-import Combine
 
 class LoginViewModel {
     
-    var email = ""
-    var password = ""
-    
+    // MARK: - Constants
     private let dataManager = DataManager()
     
+    // MARK: - Properties
+    var email = ""
+    var password = ""
     var onSuccessLogin: (() -> Void)?
     var onFailedLogin: ((Error) -> Void)?
     

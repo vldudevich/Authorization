@@ -9,7 +9,10 @@ import Foundation
 
 class RegistrationViewModel {
     
-    private var dataManager = DataManager()
+    // MARK: - Constants
+    private let dataManager = DataManager()
+    
+    // MARK: - Properties
     var firstName = ""
     var lastName = ""
     var email = ""
@@ -25,7 +28,7 @@ class RegistrationViewModel {
                            lastName: lastName) { [weak self] result in
             guard let self = self else { return }
             switch result {
-            case .success(let authResult):
+            case .success(_):
                 self.onSuccessRegistration?()
             case .failure(let error):
                 self.onFailedRegistration?(error)

@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Firebase
 
 class HomeViewController: BaseViewController {
     
@@ -18,8 +17,8 @@ class HomeViewController: BaseViewController {
     @IBOutlet private weak var logoutButton: UIButton!
     // MARK: - Constants
     private let homeScreenViewModel: HomeScreenViewModel
-    // MARK: - Properties
     
+    // MARK: - Properties
     // MARK: - Lifecycle
     init(homeScreenViewModel: HomeScreenViewModel) {
         self.homeScreenViewModel = homeScreenViewModel
